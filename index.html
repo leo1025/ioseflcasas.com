@@ -19,9 +19,9 @@
       <div class="container">
         <nav class="navbar">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#">Resume</a></li>
           </ul>
         </nav>
@@ -30,63 +30,117 @@
 
     <!-- Welcome Splash block -->
     <div class="welcome">
-      <div>
+      <div class="title">
         <h1 class="name">Iosef Casas</h1>
         <h1 class="hline-bottom"></h1>
         <h3>Programmer and Digital Artist</h3>
       </div>
     </div>
 
-    <!-- Progile block -->
-    <div class="about">
-      <div class="sub-title">
-        <h1>About</h1>
-        <hr>
-      </div>
-
-      <div class="row">
-        <div class="pic-block">
-          <img class="avatar" alt="Iosef-Casas" src="assets/self-big.png">
+    <!-- Profile block -->
+    <div class="about" id="about">
+      <div class="profile">
+        <div class="sub-title">
+          <h1>About</h1>
+          <hr>
         </div>
 
-        <div class="about-block">
-          <div class="text">
-            <h3>Name:</h3>
-            <p>Iosef Leonardo Casas Gutierrez</p>
-            <h3>Age:</h3>
-            <p>21 years</p>
-            <h3>Education:</h3>
-            <p>B.A. Computer Science Modified with Digital Arts at Dartmouth College, Hanover NH</p>
-            <p>High School Diploma from Fern Creek High School, Louisville KY</p>
+        <div class="row">
+          <div class="pic-block">
+            <div class="spacer">
+              <img class="avatar" alt="Iosef-Casas" src="assets/self-big.png">
+            </div>
           </div>
-        </div>
 
-        <div class="about-block">
-          <div class="text">
-            <h2>About me</h2>
-            <p>I'm a multi-talented problem solver, having wide interests in Computer Graphics, Machine Learning, Digital Art and Design, Mathematics and Physics. I'm also a lover of Animation and Video Games, fascinated by their process and technologies. I've been programming for over 10 years, and only recently have been making worthwhile demos and software. I'm a perfectionist, and will only show my work that I have deemed worthwhile and valuable to both myself and others.</p>
+          <div class="about-block">
+            <div class="text">
+              <h3>Name:</h3>
+              <p>Iosef Leonardo Casas Gutierrez</p>
+              <h3>Age:</h3>
+              <p>21 years</p>
+              <h3>Education:</h3>
+              <p>B.A. Computer Science Modified with Digital Arts at Dartmouth College, Hanover NH</p>
+              <p>High School Diploma from Fern Creek High School, Louisville KY</p>
+            </div>
+          </div>
+
+          <div class="about-block">
+            <div class="text">
+              <h2>About me</h2>
+              <p>I'm a multi-talented problem solver, having wide interests in Computer Graphics, Machine Learning, Digital Art and Design, Mathematics and Physics. I'm also a lover of Animation and Video Games, fascinated by their process and technologies. I've been programming for over 10 years, and only recently have been making worthwhile demos and software. I'm a perfectionist, and will only show my work that I have deemed worthwhile and valuable to both myself and others.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Work/porfolio block -->
-    <div class="work">
-      <h1>My Work</h1>
-      </hr>
-      <div>
-        <ul>
-          <li>TEST 1</li>
-          <li>TEST 2</li>
-          <li>TEST 3</li>
-        </ul>
+    <div class="work" id="work">
+      <div class="block">
+        <div class="sub-title">
+          <h1>Projects</h1>
+          <hr>
+        </div>
+        <div>
+          <ul class="work-list">
+
+            <!-- Personal Website/DALI submission listing -->
+            <li>
+              <div>
+                <div>
+                  <a href="#">
+                    <img src="thumbnails/Website.png" class="work-thumbnail">
+                  </a>
+                </div>
+                <div>
+                  <h3>ioseflcasas.com (DALI submission)</h3>
+                  <p>Making a Ray-Tracer in ShaderToy</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Ray-Tracing but in ShaderToy listing -->
+            <li>
+              <div>
+                <div>
+                  <a href="#">
+                    <img src="thumbnails/raytracing.png" class="work-thumbnail">
+                  </a>
+                </div>
+                <div>
+                  <h3>Ray Tracing but in ShaderToy</h3>
+                  <p>Making a Ray-Tracer in ShaderToy</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- CS77 Solar System Listing -->
+            <li>
+              <div>
+                <div>
+                  <a href="#">
+                    <img src="thumbnails/SOLAR.png" class="work-thumbnail">
+                  </a>
+                </div>
+                <div>
+                  <h3>CS77 Solar System Simulation</h3>
+                  <p>Making a Ray-Tracer in ShaderToy</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <!-- Contact info block -->
-    <div class="contact">
-      <h1>Contact</h1>
+    <div class="contact" id="contact">
+      <div class="block">
+        <div class="sub-title">
+          <h1>Contact</h1>
+          <hr>
+        </div>
+      </div>
     </div>
-
   </body>
 </html>

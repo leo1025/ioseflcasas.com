@@ -1,11 +1,13 @@
 /*
 *     Top navigation bar styling.
 *     Has hover animation feature.
+*     Keeps header navigation menu fixed.
 */
 header {
   background: #6ac468;
   font-weight: bold;
-  text-align: center;
+  position: fixed;
+  width: 100%;
 }
 
 header::after {
@@ -15,7 +17,7 @@ header::after {
 }
 
 .navbar {
-  float: none;
+  text-align: center;
 }
 
 .navbar ul {
@@ -26,9 +28,8 @@ header::after {
 
 .navbar li {
   display: inline-block;
-  margin-left: 70px;
-  padding: 25px;
-
+  padding: 20px;
+  margin-left: 80px;
   position: relative;
 }
 
@@ -37,7 +38,6 @@ header::after {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
-  text-align: center;
 }
 
 .navbar a:hover {
@@ -59,7 +59,8 @@ header::after {
 }
 
 nav a:hover::before {
-  width: 60%;
+  width: 100%;
+  margin-left: -20px;
 }
 
 /*
@@ -85,9 +86,11 @@ p {
 
 .welcome {
   width: 100%;
-  margin: 20 auto;
   background: #555;
-  float: left;
+  padding: 50px;
+}
+
+.title {
   text-align: center;
 }
 
@@ -114,18 +117,26 @@ p {
 }
 
 .about {
-  max-width: 100%;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.profile {
+  max-width: 70%;
+  margin-left: 15%;
 }
 
 .about-block {
   display: inline-block;
   width: 33%;
+  vertical-align: top;
 }
 
 .pic-block {
   display: inline-block;
   width: 33%;
   text-align: center;
+  vertical-align: middle;
 }
 
 .text {
@@ -133,23 +144,53 @@ p {
   padding: 20px;
 }
 
+.spacer {
+  padding: 10%;
+}
+
 .avatar {
-  display: block;
-  border-radius: 299px;
+  display: inline-block;
+  border-radius: 300px;
   box-sizing: border-box;
   background-color: #DDD;
   border: 7px solid #6ac468;
 }
 
+.work-thumbnail {
+  display: inline;
+  width: 300px;
+  height: 300px;
+}
+
 .work {
-  width: 100%;
-  margin: 20 auto;
   background: #555;
-  text-align: center;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.work-list {
+  list-style: none;
+}
+
+.work-list div {
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px;
+}
+
+.work-list li {
+  text-decoration: none;
+}
+
+.block {
+    padding: 25px;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .contact {
   margin: 0 auto;
   width: 100%;
+  padding-top: 25px;
   text-align: center;
 }
