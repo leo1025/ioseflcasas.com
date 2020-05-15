@@ -29,7 +29,8 @@ header::after {
 .navbar li {
   display: inline-block;
   padding: 20px;
-  margin-left: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
   position: relative;
 }
 
@@ -80,26 +81,13 @@ p {
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.welcome {
   width: 100%;
-  background: #555;
-  padding: 50px;
+  margin: 0 auto;
 }
 
 .title {
   text-align: center;
-}
-
-.hline-bottom {
-  width: 400px;
-  height: 0;
-  border: 1px solid #ffffff;
-  margin: 10px;
-  display:inline-block;
+  padding: 25px;
 }
 
 .name {
@@ -114,16 +102,6 @@ p {
 .row {
   margin-right: 30px;
   margin-left: 30px;
-}
-
-.about {
-  padding-top: 50px;
-  width: 100%;
-}
-
-.profile {
-  max-width: 70%;
-  margin-left: 15%;
 }
 
 .about-block {
@@ -162,6 +140,19 @@ p {
   height: 300px;
 }
 
+.block {
+   max-width: 100%;
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-bottom: 25px;
+}
+
+.dark-block {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 25px;
+}
+
 .light-block {
   background: #555;
   margin: 0 auto;
@@ -191,7 +182,7 @@ p {
 }
 
 .skill-list {
-  width: 36%;
+  width: 38%;
   margin-left: 60px;
   margin-right: 60px;
   list-style: none;
@@ -244,14 +235,70 @@ p {
   width: 50%;
 }
 
-.block {
-    padding: 25px;
-    width: 70%;
-    margin-left: 15%;
+.Git {
+  width: 80%;
 }
 
-.dark-block {
-  margin: 0 auto;
+.Atom {
+  width: 80%;
+}
+
+.Sublime {
+  width: 90%;
+}
+
+.Zilla {
+  width: 70%;
+}
+
+.Illustrator {
+  width: 30%;
+}
+
+.Photoshop {
+  width: 30%;
+}
+
+.Clip {
+  width: 60%;
+}
+
+.Medibang {
+  width: 90%;
+}
+
+.Linux {
   width: 100%;
-  padding-top: 25px;
+}
+
+.Windows {
+  width: 80%;
+}
+
+.Mac {
+  width: 20%;
+}
+
+.Android {
+  width: 60%;
+}
+
+.Pycharm {
+  width: 90%;
+}
+
+.Eclipse {
+  width: 80%;
+}
+
+.English {
+  width: 100%;
+}
+
+.Spanish {
+  width: 100%;
+}
+
+.Japanese {
+  width: 20%;
 }
