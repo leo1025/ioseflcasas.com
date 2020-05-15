@@ -71,7 +71,7 @@ body {
   margin: 0;
   background: #222;
   color: #ffffff;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
 }
 
@@ -162,8 +162,9 @@ p {
   height: 300px;
 }
 
-.work {
+.light-block {
   background: #555;
+  margin: 0 auto;
   width: 100%;
   padding-top: 25px;
 }
@@ -182,15 +183,75 @@ p {
   text-decoration: none;
 }
 
+.skill-block div{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.skill-list {
+  width: 36%;
+  margin-left: 60px;
+  margin-right: 60px;
+  list-style: none;
+}
+
+.skill-list li {
+  margin: 20px auto;
+}
+
+.bar {
+  background: #111111;
+  display: block;
+  height: 2px;
+  border: 1px solid #000000;
+  overflow: hidden;
+  box-shadow: 0 0 10px #6ac468;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background: #6ac468;
+}
+
+.Python {
+  width: 90%;
+}
+
+.C {
+  width: 90%;
+}
+
+.Cplus {
+  width: 50%;
+}
+
+.GLSL {
+  width: 80%;
+}
+
+.Java {
+  width: 70%;
+}
+
+.HTML {
+  width: 70%;
+}
+
+.CSS {
+  width: 50%;
+}
+
 .block {
     padding: 25px;
     width: 70%;
     margin-left: 15%;
 }
 
-.contact {
+.dark-block {
   margin: 0 auto;
   width: 100%;
   padding-top: 25px;
-  text-align: center;
 }
