@@ -9,6 +9,7 @@
     <!-- reference google font and stylesheet -->
     <link href="https://fonts.googleapis.com/css?family-Work+Sans:300">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/533ddeaa5a.js" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <title>Iosef Casas</title>
@@ -99,7 +100,7 @@
             </li>
 
             <li>
-              <h3>C++</h3><span class="bar"><span class="Cplus"></span></span>
+              <h3>GLSL</h3><span class="bar"><span class="GLSL"></span></span>
             </li>
 
             <li>
@@ -117,8 +118,11 @@
             </li>
 
             <li>
-              <h3>GLSL</h3><span class="bar"><span class="GLSL"></span></span>
+              <h3>C++</h3><span class="bar"><span class="Cplus"></span></span>
             </li>
+
+            <li>
+              <h3>PHP</h3><span class="bar"><span class="PHP"></span></span>
           </div>
         </div>
         <div class="skill-block">
@@ -126,6 +130,22 @@
           <hr>
 
           <div class="skill-list">
+            <li>
+              <h3>Linux: Ubuntu, Mint</h3><span class="bar"><span class="Linux"></span></span>
+            </li>
+
+            <li>
+              <h3>Medibang Paint</h3><span class="bar"><span class="Medibang"></span></span>
+            </li>
+
+            <li>
+              <h3>Pycharm</h3><span class="bar"><span class="Pycharm"></span></span>
+            </li>
+
+            <li>
+              <h3>Sublime Text</h3><span class="bar"><span class="Sublime"></span></span>
+            </li>
+
             <li>
               <h3>Git</h3><span class="bar"><span class="Git"></span></span>
             </li>
@@ -135,11 +155,26 @@
             </li>
 
             <li>
+              <h3>Eclipse</h3><span class="bar"><span class="Eclipse"></span></span>
+            </li>
+
+          </div>
+          <div class="skill-list">
+
+            <li>
+              <h3>Windows: 7, 8, 10</h3><span class="bar"><span class="Windows"></span></span>
+            </li>
+
+            <li>
               <h3>FileZilla</h3><span class="bar"><span class="Zilla"></span></span>
             </li>
 
             <li>
-              <h3>Sublime Text</h3><span class="bar"><span class="Sublime"></span></span>
+              <h3>Android Studio</h3><span class="bar"><span class="Android"></span></span>
+            </li>
+
+            <li>
+              <h3>Clip Studio Paint</h3><span class="bar"><span class="Clip"></span></span>
             </li>
 
             <li>
@@ -151,37 +186,7 @@
             </li>
 
             <li>
-              <h3>Clip Studio Paint</h3><span class="bar"><span class="Clip"></span></span>
-            </li>
-          </div>
-
-          <div class="skill-list">
-            <li>
-              <h3>Medibang Paint</h3><span class="bar"><span class="Medibang"></span></span>
-            </li>
-
-            <li>
-              <h3>Linux: Ubuntu, Mint</h3><span class="bar"><span class="Linux"></span></span>
-            </li>
-
-            <li>
-              <h3>Windows: 7, 8, 10</h3><span class="bar"><span class="Windows"></span></span>
-            </li>
-
-            <li>
               <h3>Mac OS</h3><span class="bar"><span class="Mac"></span></span>
-            </li>
-
-            <li>
-              <h3>Android Studio</h3><span class="bar"><span class="Android"></span></span>
-            </li>
-
-            <li>
-              <h3>Pycharm</h3><span class="bar"><span class="Pycharm"></span></span>
-            </li>
-
-            <li>
-              <h3>Eclipse</h3><span class="bar"><span class="Eclipse"></span></span>
             </li>
           </div>
         </div>
@@ -216,17 +221,17 @@
             </li>
 
             <li>
-              <h3>Public Speaking</h3><span class="bar"><span class="Public Speaking"></span></span>
+              <h3>Writing</h3><span class="bar"><span class="Writing"></span></span>
             </li>
           </div>
 
           <div class="skill-list">
             <li>
-              <h3>Writing</h3><span class="bar"><span class="Writing"></span></span>
+              <h3>Public Speaking</h3><span class="bar"><span class="Public Speaking"></span></span>
             </li>
 
             <li>
-              <h3>Halo Multiplayer (Totally)</h3><span class="bar"><span class="Halo"></span></span>
+              <h3>Halo Multiplayer (The best 100%)</h3><span class="bar"><span class="Halo"></span></span>
             </li>
           </div>
         </div>
@@ -246,14 +251,17 @@
             <!-- Personal Website/DALI submission listing -->
             <li>
               <div>
-                <div>
-                  <a href="#">
+                <a href="#">
+                  <div class="project-item">
                     <img src="thumbnails/Website.png" class="work-thumbnail">
-                  </a>
-                </div>
-                <div>
+                    <div class="overlay">
+                      <h4>github</h4>
+                    </div>
+                  </div>
+                </a>
+                <div class="description">
                   <h3>ioseflcasas.com (DALI submission)</h3>
-                  <p>Making a Ray-Tracer in ShaderToy</p>
+                  <p>Made for both creating a personal resume/portfolio site and for DALI lab coding challenge.I have once tried to make a website using WordPress as a base, however, I found myself completely unfamiliar with HTML, CSS and PHP. Though I made something somewhat functional, I ended up far more frustrated with myself and web design as field. This time I wanted to give it another try and after looking at 3 portfolio websites, I felt inspired. This site is a one pager, with the intention for my project links to connect to either a more detailed blog-style page or towards a blog post. But for now will simply feature thumbnails, a short description and a link to either their repository or ShaderToy link.</p>
                 </div>
               </div>
             </li>
@@ -263,10 +271,15 @@
               <div>
                 <div>
                   <a href="#">
-                    <img src="thumbnails/raytracing.png" class="work-thumbnail">
+                    <div class="project-item">
+                      <img src="thumbnails/raytracing.png" class="work-thumbnail">
+                      <div class="overlay">
+                        <h4>ShaderToy</h4>
+                      </div>
+                    </div>
                   </a>
                 </div>
-                <div>
+                <div class="description">
                   <h3>Ray Tracing but in ShaderToy</h3>
                   <p>Making a Ray-Tracer in ShaderToy</p>
                 </div>
@@ -278,10 +291,15 @@
               <div>
                 <div>
                   <a href="#">
-                    <img src="thumbnails/SOLAR.png" class="work-thumbnail">
+                    <div class="project-item">
+                      <img src="thumbnails/SOLAR.png" class="work-thumbnail">
+                      <div class="overlay">
+                        <h4>ShaderToy</h4>
+                      </div>
+                    </div>
                   </a>
                 </div>
-                <div>
+                <div class="description">
                   <h3>CS77 Solar System Simulation</h3>
                   <p>Making a Ray-Tracer in ShaderToy</p>
                 </div>
@@ -299,11 +317,25 @@
           <h1>Contact</h1>
           <hr>
         </div>
-        <div>
-          <h3>Email:</h3>
-          <p>iosef.l.casas.21@dartmouth.edu</p>
-          <h3>Linkedin:</h3>
-          <p>https://www.linkedin.com/in/iosef-casas-71378a15a/</p>
+        <div class="contacts">
+          <ul>
+            <li>
+              <div>
+                <a href="#"><i class="far fa-envelope" aria-hidden="true"></i></a>
+              </div>
+              <div>
+                <h2>iosef.l.casas.21@dartmouth.edu</h2>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+              <div>
+                <h2>Linkedin profile</h2>
+              </div>
+            </li>
+          </ul>
         <div>
       </div>
     </div>

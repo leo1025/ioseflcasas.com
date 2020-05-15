@@ -8,6 +8,7 @@ header {
   font-weight: bold;
   position: fixed;
   width: 100%;
+  z-index:1000;
 }
 
 header::after {
@@ -18,6 +19,7 @@ header::after {
 
 .navbar {
   text-align: center;
+  position: relative;
 }
 
 .navbar ul {
@@ -87,7 +89,7 @@ p {
 
 .title {
   text-align: center;
-  padding: 25px;
+  padding: 50px;
 }
 
 .name {
@@ -134,30 +136,68 @@ p {
   border: 7px solid #6ac468;
 }
 
-.work-thumbnail {
-  display: inline;
-  width: 300px;
-  height: 300px;
-}
-
 .block {
    max-width: 100%;
    padding-left: 10%;
    padding-right: 10%;
-   padding-bottom: 25px;
+   padding-top: 50px;
+   padding-bottom: 50px;
 }
 
 .dark-block {
   margin: 0 auto;
   width: 100%;
-  padding-top: 25px;
 }
 
 .light-block {
   background: #555;
   margin: 0 auto;
   width: 100%;
-  padding-top: 25px;
+}
+
+/*
+*     Projects listing styling
+*/
+.project-item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding-right: 40px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  width: inherit;
+  border-radius: 5%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fff;
+}
+
+.overlay h4 {
+  color: #000;
+  font-size: 40px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-item:hover .overlay {
+  opacity: 0.6;
+}
+
+.work-thumbnail {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
 }
 
 .work-list {
@@ -167,18 +207,27 @@ p {
 .work-list div {
   display: inline-block;
   vertical-align: top;
-  padding: 25px;
+}
+
+.description {
+  width: 75%;
+  word-break: normal;
 }
 
 .work-list li {
   text-decoration: none;
+  padding: 25px;
 }
 
-.skill-block div{
+.skill-block div {
   display: inline-block;
   vertical-align: top;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.skill-block h2 {
+  margin-left: 5%;
 }
 
 .skill-list {
@@ -195,16 +244,59 @@ p {
 .bar {
   background: #111111;
   display: block;
-  height: 2px;
+  height: 8px;
   border: 1px solid #000000;
   overflow: hidden;
-  box-shadow: 0 0 10px #6ac468;
+  box-shadow: 0 0 5px #6ac468;
 }
 
 .bar span {
-  height: 2px;
+  height: 8px;
   float: left;
   background: #6ac468;
+}
+
+.contacts {
+}
+
+.contacts ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 30%;
+}
+
+.contacts ul li {
+  padding: 25px;
+}
+
+.contacts div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5%;
+}
+
+.contacts ul li a {
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #6ac468;
+  color: #6ac468;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.contacts ul li a i {
+    line-height: 90px;
+    font-size: 30px;
+    transition: 0.2s linear;
+}
+
+.contacts ul li a:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
 }
 
 .Python {
@@ -233,6 +325,10 @@ p {
 
 .CSS {
   width: 50%;
+}
+
+.PHP {
+  width: 30%;
 }
 
 .Git {
