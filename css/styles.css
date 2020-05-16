@@ -279,9 +279,9 @@ p {
 .skill-list {
   display: grid;
   align-items: center;
-  width: 38%;
-  margin-left: 60px;
-  margin-right: 60px;
+  width: 35%;
+  margin-left: 5%;
+  margin-right: 5%;
   list-style: none;
 }
 
