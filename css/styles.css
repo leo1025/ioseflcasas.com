@@ -75,7 +75,7 @@ body {
   margin: 0;
   background: #222;
   color: #ffffff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 500;
 }
 
@@ -142,8 +142,7 @@ p {
 }
 
 .name {
-  font-size: 70px;
-  font-family: 'Orbitron', sans-serif;
+  font-size: 60px;
   font-weight: bold;
 }
 
@@ -160,13 +159,6 @@ p {
   display: inline-block;
   width: 33%;
   vertical-align: top;
-}
-
-.pic-block {
-  display: inline-block;
-  width: 33%;
-  text-align: center;
-  vertical-align: middle;
 }
 
 .text {
@@ -285,6 +277,8 @@ p {
 }
 
 .skill-list {
+  display: grid;
+  align-items: center;
   width: 38%;
   margin-left: 60px;
   margin-right: 60px;
