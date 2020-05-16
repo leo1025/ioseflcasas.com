@@ -87,13 +87,27 @@ p {
   margin: 0 auto;
 }
 
+.full-title-splash {
+  padding-top: 25px;
+  position: relative;
+}
+
 .title {
   text-align: center;
-  padding: 50px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+  text-shadow: 2px 2px 10px #6ac468;
+}
+
+.splash {
+  width: 100%;
+  height: auto;
 }
 
 .name {
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
 }
 
@@ -219,6 +233,10 @@ p {
   padding: 25px;
 }
 
+/*
+*     Skill listing styling
+*/
+
 .skill-block div {
   display: inline-block;
   vertical-align: top;
@@ -244,14 +262,14 @@ p {
 .bar {
   background: #111111;
   display: block;
-  height: 8px;
+  height: 4px;
   border: 1px solid #000000;
   overflow: hidden;
   box-shadow: 0 0 5px #6ac468;
 }
 
 .bar span {
-  height: 8px;
+  height: 4px;
   float: left;
   background: #6ac468;
 }
