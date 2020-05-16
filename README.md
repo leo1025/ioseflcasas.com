@@ -23,3 +23,9 @@ TODOs and the future
 - Learn js to have more attractive animation. Such as the skill section. Should ideally have animations on scroll
 - There is a bit of clunkiness to the theme, needs more refinement
 - More optimized code, there is a lot that still needs work. The skill list being too verbose.
+
+### Beta Version 1.1
+
+Things added
+- Javascripts to make more interesting animations
+- Resume download link
