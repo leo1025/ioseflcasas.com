@@ -5,7 +5,8 @@
 */
 header {
   background: #6ac468;
-  font-weight: bold;
+  font-weight: 1000;
+  font-size: 20px;
   position: fixed;
   width: 100%;
   z-index:1000;
@@ -74,8 +75,8 @@ body {
   margin: 0;
   background: #222;
   color: #ffffff;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 p {
@@ -142,6 +143,7 @@ p {
 
 .name {
   font-size: 70px;
+  font-family: 'Orbitron', sans-serif;
   font-weight: bold;
 }
 
