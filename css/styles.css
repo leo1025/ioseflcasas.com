@@ -100,40 +100,12 @@ p {
   top: 30%;
   transform: translate(-50%, -30%);
   text-shadow: 2px 2px 10px #6ac468;
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 3s; /* Firefox < 16 */
-      -ms-animation: fadein 3s; /* Internet Explorer */
-       -o-animation: fadein 3s; /* Opera < 12.1 */
-          animation: fadein 3s;
+  opacity: 0;
+  transition: opacity 2s 1s ease-out;
 }
 
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.title.is-visible {
+  opacity: 1;
 }
 
 .splash {
@@ -151,8 +123,8 @@ p {
 }
 
 .row {
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .about-block {
@@ -163,17 +135,18 @@ p {
 
 .text {
   word-break: normal;
-  padding: 20px;
+  padding: 10px;
 }
 
 .spacer {
-  padding: 10%;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .avatar {
-  display: inline-block;
   border-radius: 300px;
   box-sizing: border-box;
+  position: relative;
   background-color: #DDD;
   border: 7px solid #6ac468;
 }
@@ -276,7 +249,7 @@ p {
   margin-left: 5%;
 }
 
-.skill-list {
+.skill-list{
   display: grid;
   align-items: center;
   width: 35%;
@@ -354,398 +327,262 @@ p {
 /* TODO: This entire section needs to be changed. */
 
 .Python {
-  width: 90%;
-  animation: Python 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Python {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 90%;
-  }
+.Python.is-visible {
+  width: 90%;
 }
 
 .C {
-  width: 90%;
-  animation: C 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes C {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 90%;
-  }
+.C.is-visible {
+  width: 90%;
 }
 
 .Cplus {
-  width: 50%;
-  animation: Cplus 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Cplus {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 50%;
-  }
+.Cplus.is-visible {
+  width: 50%;
 }
 
 .GLSL {
-  width: 80%;
-  animation: GLSL 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes GLSL {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 80%;
-  }
+.GLSL.is-visible {
+  width: 80%;
 }
 
 .Java {
-  width: 70%;
-  animation: Java 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Java {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 70%;
-  }
+.Java.is-visible {
+  width: 70%;
 }
 
 .HTML {
-  width: 70%;
-  animation: HTML 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes HTML {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 70%;
-  }
+.HTML.is-visible {
+  width: 70%;
 }
 
 .CSS {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.CSS.is-visible {
   width: 50%;
-  animation: CSS 2s;
 }
 
-@keyframes CSS {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 50%;
-  }
+.Javascript {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-.PHP {
+.Javascript.is-visible {
   width: 30%;
-  animation: PHP 2s;
-}
-
-@keyframes PHP {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 30%;
-  }
 }
 
 .Git {
-  width: 80%;
-  animation: Git 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Git {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 80%;
-  }
+.Git.is-visible {
+  width: 80%;
 }
 
 .Atom {
-  width: 80%;
-  animation: Atom 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Atom {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 80%;
-  }
+.Atom.is-visible {
+  width: 80%;
 }
 
 .Sublime {
-  width: 90%;
-  animation: Sublime 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Sublime {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 90%;
-  }
+.Sublime.is-visible {
+  width: 90%;
 }
 
 .Zilla {
-  width: 70%;
-  animation: Zilla 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Zilla {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 70%;
-  }
+.Zilla.is-visible {
+  width: 70%;
 }
 
 .Illustrator {
-  width: 30%;
-  animation: Illustrator 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Illustrator {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 30%;
-  }
+.Illustrator.is-visible {
+  width: 30%;
 }
 
 .Photoshop {
-  width: 30%;
-  animation: Photoshop 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Photoshop {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 20%;
-  }
+.Photoshop.is-visible {
+  width: 30%;
 }
 
 .Clip {
-  width: 60%;
-  animation: Clips 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Clips {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 60%;
-  }
+.Clip.is-visible {
+  width: 60%;
 }
 
 .Medibang {
-  width: 90%;
-  animation: Medibang 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Medibang {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 90%;
-  }
+.Medibang.is-visible {
+  width: 90%;
 }
 
 .Linux {
-  width: 100%;
-  animation: Linux 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Linux {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 100%;
-  }
+.Linux.is-visible {
+  width: 100%;
 }
 
 .Windows {
-  width: 80%;
-  animation: Windows 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Windows {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 80%;
-  }
+.Windows.is-visible {
+  width: 90%;
 }
 
 .Mac {
-  width: 20%;
-  animation: Mac 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Mac {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 20%;
-  }
+.Mac.is-visible {
+  width: 20%;
 }
 
 .Android {
-  width: 60%;
-  animation: Android 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Android {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 60%;
-  }
+.Android.is-visible {
+  width: 60%;
 }
 
 .Pycharm {
-  width: 90%;
-  animation: Pycharm 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Pycharm {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 90%;
-  }
+.Pycharm.is-visible {
+  width: 90%;
 }
 
 .Eclipse {
-  width: 80%;
-  animation: Eclipse 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Eclipse {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 80%;
-  }
+.Eclipse.is-visible {
+  width: 80%;
 }
 
 .English {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.English.is-visible {
   width: 100%;
-  animation: English 2s;
 }
 
 .Spanish {
-  width: 100%;
-  animation: English 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes English {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 100%;
-  }
+.Spanish.is-visible {
+  width: 100%;
 }
 
 .Japanese {
-  width: 20%;
-  animation: Japanese 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Japanese {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 20%;
-  }
+.Japanese.is-visible {
+  width: 20%;
 }
 
 .Teamwork {
-  width: 80%;
-  animation: Teamwork 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Teamwork {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 80%;
-  }
+.Teamwork.is-visible {
+  width: 80%;
 }
 
 .Speaking {
-  width: 60%;
-  animation: Speaking 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Speaking {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 60%;
-  }
+.Speaking.is-visible {
+  width: 60%;
 }
 
 .Writing {
-  width: 80%;
-  animation: Writing 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Writing {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 80%;
-  }
+.Writing.is-visible {
+  width: 80%;
 }
 
 .Halo {
-  width: 100%;
-  animation: Halo 2s;
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
 }
 
-@keyframes Halo {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 100%;
-  }
+.Halo.is-visible {
+  width: 100%;
 }
