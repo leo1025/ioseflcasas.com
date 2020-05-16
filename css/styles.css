@@ -88,7 +88,7 @@ p {
 }
 
 .full-title-splash {
-  padding-top: 25px;
+  padding-top: 35px;
   position: relative;
 }
 
@@ -308,6 +308,10 @@ p {
   background: #6ac468;
 }
 
+/*
+*     Contact listing. Needs more twitter.
+*/
+
 .contacts {
 }
 
@@ -350,6 +354,8 @@ p {
   transform: scale(1.3);
   color: #f1f1f1;
 }
+
+/* TODO: This entire section needs to be changed. */
 
 .Python {
   width: 90%;
