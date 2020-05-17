@@ -37,3 +37,7 @@ Added
 - Proper text and image scaling
 
 Thank you Justin Baltzar! Great help!
+
+Still have alignment issues with the Header Navbar animations
+- Removed top bar animation
+- Added text grow animation
