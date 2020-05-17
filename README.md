@@ -26,6 +26,12 @@ TODOs and the future
 
 ### Beta Version 1.1
 
-Things added
+Added
 - Javascripts to make more interesting animations
 - Resume download link
+
+### Beta Version 1.2
+
+Added
+- Grid layout
+- Proper text and image scaling
