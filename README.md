@@ -11,13 +11,16 @@ This site is a one pager, with the intention for my project links to connect to 
 Special thanks to the incredible people that made the websites I was inspired by and learned from.
 
 ### Alpha work progress
+
 <img src="img/v1.png" width="800" height="450">
+
 #### Hello World!
 - Running a very basic Hello World prompt with a bit of styling.
 - Header being separate from the body.
 - Color scheme will not change from here. Dark theme all the way!
 
 <img src="img/v2.png" width="800" height="450">
+
 #### Beginning to add content
 - Some sectioning was getting underway as I was learning wrappers and CSS classes.
 - Attempting to work with buttons and links.
@@ -25,6 +28,7 @@ Special thanks to the incredible people that made the websites I was inspired by
 - As can be seen, was doing my best to learn from other websites.
 
 <img src="img/v3.png" width="800" height="450">
+
 #### Design going along.
 - Drew a rough design on paper, inspired by Pascal, with his one pager.
 - Gawdiness being my goal, I'll be adding it all into a basic resume/portfolio site.
