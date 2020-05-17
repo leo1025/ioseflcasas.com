@@ -10,6 +10,13 @@ This site is a one pager, with the intention for my project links to connect to 
 
 Special thanks to the incredible people that made the websites I was inspired by and learned from.
 
+### Alpha work progress
+<img src="img/v1.png" width="800" height="450">
+
+<img src="img/v2.png" width="800" height="450">
+
+<img src="img/v3.png" width="800" height="450">
+
 ### Beta Version 1.0
 
 Reaching the end of my self-induced time limit, on May 16, 2020. This is mainly for the DALI Lab submission.
@@ -19,7 +26,7 @@ Things accomplished.
 - Have my projects lined out in a attractive styles
 - Dark Theme prevailed once more
 
-TODOs and the future
+TODOs
 - Learn js to have more attractive animation. Such as the skill section. Should ideally have animations on scroll
 - There is a bit of clunkiness to the theme, needs more refinement
 - More optimized code, there is a lot that still needs work. The skill list being too verbose.
