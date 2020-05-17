@@ -35,3 +35,5 @@ Added
 Added
 - Grid layout
 - Proper text and image scaling
+
+Thank you Justin Baltzar! Great help!
