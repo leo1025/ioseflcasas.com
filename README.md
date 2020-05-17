@@ -56,11 +56,17 @@ Added
 ### Beta Version 1.2
 
 Added
-- Grid layout
+- Grid layout to the About section, Skill section, and Contact section
 - Proper text and image scaling
+- Removed unneeded text next to contact icons
+- Re-centered nearly all objects on page. Hopefully is fully centered now!
 
-Thank you Justin Baltzar! Great help!
+Thank you Justin Baltzar! You were a great help!
+
+### Beta Version 1.3
 
 Still have alignment issues with the Header Navbar animations
 - Removed top bar animation
 - Added text grow animation
+- Added Text scaling
+- Phone/different resolution scaling: OK
