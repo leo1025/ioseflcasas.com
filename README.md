@@ -8,7 +8,10 @@ I have once tried to make a website using WordPress as a base, however, I found 
 
 This site is a one pager, with the intention for my project links to connect to either a more detailed blog-style page or towards a blog post. But for now will simply feature thumbnails, a short description and a link to either their repository or ShaderToy link.
 
-Special thanks to the incredible people that made the websites I was inspired by and learned from.
+Special shoutout to the incredible people that made the websites I was inspired by and learned from.
+- http://www.pascalvangemert.nl/
+- https://www.nathanielkoloc.com/
+- https://www.kathydong.com
 
 ### Alpha work progress
 
@@ -61,7 +64,7 @@ Added
 - Removed unneeded text next to contact icons
 - Re-centered nearly all objects on page. Hopefully is fully centered now!
 
-Thank you Justin Baltzar! You were a great help!
+Thank you Justin Baltazar! You were a great help!
 
 ### Beta Version 1.3
 
@@ -70,3 +73,11 @@ Still have alignment issues with the Header Navbar animations
 - Added text grow animation
 - Added Text scaling
 - Phone/different resolution scaling: OK
+
+### Version 1.0.0
+Finally setting this as final, last touches made:
+- Adjusted contact spacing
+- Rewritten descriptions
+- Slightly adjusted About item scaling
+
+For my second delve into web design, I'm very happy with the results. Even if the site is very gawdy.
