@@ -3,13 +3,13 @@
 *     Has hover animation feature.
 *     Keeps header navigation menu fixed.
 */
+
 header {
   background: #6ac468;
-  font-weight: 1000;
-  font-size: 24px;
   position: fixed;
   width: 100%;
   z-index:1000;
+  /* Sets header as the top overlay*/
 }
 
 header::after {
@@ -36,17 +36,17 @@ header::after {
 
 .navbar li {
   display: inline-block;
-  text-align: center;
-  padding: 1%;
+  padding: 20px;
   position: relative;
-  width: 5%;
+  width: 10%;
 }
 
 .navbar a {
   color: #444;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 700;
   transition: font-size 0.1s ease-out;
 }
 
@@ -285,6 +285,7 @@ p {
   padding: 25px;
 }
 
+/* icon class scales thumbnails to screen size */
 .icon {
   display: inline-block;
   margin-left: 2%;

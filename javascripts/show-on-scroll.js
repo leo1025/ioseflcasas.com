@@ -1,3 +1,4 @@
+// Learned from a tutorial https://cssanimation.rocks/scroll-animations/
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
              // IE Fallback
@@ -22,7 +23,6 @@ loop();
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
-  // special bonus for those using jQuery
   if (typeof jQuery === "function" && el instanceof jQuery) {
     el = el[0];
   }
