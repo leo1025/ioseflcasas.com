@@ -18,8 +18,13 @@ header::after {
   clear: both;
 }
 
-.navbar {
+.container {
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
+}
+
+.navbar {
   position: relative;
 }
 
@@ -32,9 +37,10 @@ header::after {
 .navbar li {
   display: inline-block;
   padding: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
   position: relative;
+  width: 5%;
 }
 
 .navbar a {
@@ -77,15 +83,11 @@ body {
   color: #ffffff;
   font-family: 'Jost', sans-serif;
   font-weight: 500;
+  font-size: 20px;
 }
 
 p {
   line-height: 35px;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
 }
 
 .full-title-splash {
@@ -95,6 +97,7 @@ p {
 
 .title {
   text-align: center;
+  display: inline-block;
   position: absolute;
   left: 50%;
   top: 30%;
@@ -122,15 +125,24 @@ p {
   text-align: center;
 }
 
+.col {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 50% 50%;
+}
+
 .row {
-  margin-right: 10px;
-  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
 
 .about-block {
-  display: inline-block;
-  width: 33%;
   vertical-align: top;
+}
+
+.description-block {
+  vertical-align: top;
+  margin: 0 10%;
 }
 
 .text {
@@ -140,11 +152,13 @@ p {
 
 .spacer {
   text-align: center;
-  margin-top: 50px;
+  position: relative;
 }
 
 .avatar {
-  border-radius: 300px;
+  border-radius: 50%;
+  max-width:100%;
+  max-height:100%;
   box-sizing: border-box;
   position: relative;
   background-color: #DDD;
@@ -175,9 +189,9 @@ p {
 */
 .project-item {
   position: relative;
-  width: 300px;
-  height: 300px;
-  padding-right: 40px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 40px;
 }
 
 .overlay {
@@ -186,8 +200,8 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  height: inherit;
-  width: inherit;
+  max-width: inherit;
+  max-height: 97.5%;
   border-radius: 5%;
   opacity: 0;
   transition: .5s ease;
@@ -196,9 +210,10 @@ p {
 
 .overlay h4 {
   color: #000;
-  font-size: 40px;
+  font-size: 30px;
+  font-size: 3.0vw;
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   text-align: center;
@@ -219,13 +234,13 @@ p {
   list-style: none;
 }
 
-.work-list div {
-  display: inline-block;
+.work-item {
+  display: grid;
+  grid-template-columns: 25% 75%;
   vertical-align: top;
 }
 
 .description {
-  width: 75%;
   word-break: normal;
 }
 
@@ -238,28 +253,18 @@ p {
 *     Skill listing styling
 */
 
-.skill-block div {
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.skill-block h2 {
-  margin-left: 5%;
+.skill-block {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  grid-gap: 20px;
+  padding: 20px;
 }
 
 .skill-list{
-  display: grid;
-  align-items: center;
-  width: 35%;
   margin-left: 5%;
   margin-right: 5%;
   list-style: none;
-}
-
-.skill-list li {
-  margin: 20px auto;
 }
 
 .bar {
@@ -282,12 +287,16 @@ p {
 */
 
 .contacts {
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 25px;
 }
 
 .contacts ul {
   list-style: none;
-  text-align: left;
-  margin-left: 30%;
+  margin-right: 5%;
 }
 
 .contacts ul li {
@@ -297,16 +306,15 @@ p {
 .contacts div {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5%;
 }
 
 .contacts ul li a {
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   text-align: center;
   display: inline-block;
   border-radius: 20%;
-  box-shadow: 0 5px 15px -5px #6ac468;
+  box-shadow: 0 5px 10px -5px #6ac468;
   color: #6ac468;
   background: #fff;
   overflow: hidden;
@@ -314,8 +322,8 @@ p {
 }
 
 .contacts ul li a i {
-    line-height: 90px;
-    font-size: 30px;
+    line-height: 60px;
+    font-size: 25px;
     transition: 0.2s linear;
 }
 
