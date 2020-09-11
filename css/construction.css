@@ -1,0 +1,26 @@
+body {
+	font-size: 25px;
+	padding-bottom: 50px;
+	background: #222;
+  	color: #ffffff;
+}
+
+.warning {
+	margin: 0 auto;
+	padding: 35px 35%;
+}
+
+.big-warning {
+	font-size: 35px;
+	color: yellow;
+}
+
+.return {
+	background: #333;
+	text-align: center;
+}
+
+.return a {
+	text-decoration: none;
+	color: white;
+}

@@ -1,281 +1,68 @@
 <!-- Author: Iosef Casas -->
-<!-- Designing my own personal resume/porfolio site -->
-<!-- Inspired by: http://www.pascalvangemert.nl/, https://www.nathanielkoloc.com/, and https://www.kathydong.com -->
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
     <!-- reference google font and stylesheet -->
-     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/533ddeaa5a.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <meta charset="utf-8">
-    <title>Iosef Casas</title>
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Navigation Top Bar -->
+    <title>Home</title>
+  </head>
+
+  <body class=main>
+    <!-- Top Navigation Bar -->
     <header>
-      <div class="container">
-        <nav class="navbar">
-          <ul>
-            <span>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#work">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="docs/resume.pdf" download>Resume</a></li>
-            </span>
-          </ul>
-        </nav>
+      <div class="navigation" id="top-nav">
+        <a href="javascript:void(0);" class="icon" onclick="collapse()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="pages/construction.html">Articles</a>
+        <a href="pages/construction.html">Projects</a>
+        <a href="pages/resume.html">Resume</a>
+        <a href="pages/construction.html">About</a>
+        <a href="pages/construction.html">Contact</a>
       </div>
     </header>
 
-    <!-- Welcome Splash block -->
-    <div class="light-block">
-      <div class="full-title-splash">
-        <img class="splash" alt="green-void" src="assets/cool-renderv2.png">
-        <div class="title show-on-scroll">
-          <h1 class="name">Iosef Casas</h1>
-          <h3>Programmer and Digital Artist</h3>
-        </div>
+    <!-- Welcome Splash -->
+    <div class = "box">
+      <img class="back-img" src="assets/fractal.png">
+      <div class="title">
+        <h1>Iosef Leonardo Casas Gutierrez</h1>
+        <h3>Computer Science</h3>
+        <h3>Digital Art</h3>
       </div>
+      <a href="https://www.shadertoy.com/view/WtBBWW"><div class="text-block">
+        <h4>Fractal Landscape 1</h4>
+      </div></a>
     </div>
 
-    <!-- Profile block -->
-    <div class="dark-block" id="about">
-      <div class="block">
-        <div class="sub-title">
-          <h1>About</h1>
-          <hr>
-        </div>
+    <div class="info-bottom">
+        <h2>Welcome to my website!</h2>
+        <hr>
+        <p>I created this website initally as a one-pager resume site. But after exploring other wonderful websites and constantly looking at my website made of spaghetti code and poorly scalable content with scorn; I decided to reconstruct it into a large warehouse site of sorts where I can catalog my projects, writings, jobs and connections as I grow and develop personally and professionally. I'll briefly explain what each of the links on the bar represent.</p>
 
-        <!-- Col splits picture and basic information and my self summary. -->
-        <div class="col">
-          <div class="row">
-            <div class="about-block">
-              <div class="spacer">
-                <img class="avatar" alt="Iosef-Casas" src="assets/self-big.png">
-              </div>
-            </div>
+        <h3>Articles</h3>
+        <p> This will be a link to a future YouTube channel and written article catalog, LeoDV. I plan to create video essays and written articles on topics that interest me and that I apply to my daily life. It will be a large library of my videos and their accompanying articles or blog posts.</p>
 
-            <!-- Basic information -->
-            <div class="about-block">
-              <div class="text">
-                <h3>Name:</h3><p>Iosef Leonardo Casas Gutierrez</p>
-                <h3>Birthday:</h3><p>April 10th, 1999. 21 years</p>
-                <h3>Education:</h3><p>B.A. Computer Science Modified with Digital Arts. Dartmouth College, Hanover NH. 2021</p>
-                <p>HS Diploma. Fern Creek High School, Louisville KY. 2017</p>
-              </div>
-            </div>
-          </div>
-          <div class="description-block">
-            <div class="text">
-              <h2>Who am I?</h2>
-              <p>Hello! I'm Iosef Casas, a Peruvian immigrant from Louisville Kentucky, with dreams to become a modern-day Leonardo Da Vinci. Learning anything and everything that catches my eye. I have wide interests in Computer Graphics, Machine Learning, Software Design, Statiscal Analysis, Digital Art and Design, Mathematics, Astronomy, Paleontolgy, Physics and Philosophy. Having been reading and learning about all these subjects since I was young. I'm also a lover of Anime, Manga, Light-novels and Video Games. Even working on my own Games, Novels and Illustrations on the side. I've been programming for over 10 years now, and only recently have been making worthwhile demos and software. Recently I have also begun Graphic Design work and hope to work on it more in the future.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <h3>Projects</h3>
+        <p>This link will take you to a large clickable library that catalogs all of my projects. The image links will send you to individualized pages that briefly cover the project, design, implementation, results and conclusions. You may also find links there to direct demos, downloads or github repositories.</p>
+
+        <h3>Resume</h3>
+        <p>This link will take you to my resume site, which is a (soon to be) remake of my one-pager website. It's very simple and plain, but it acts as a reliable resume that I can connect any possible employer or peer to. Take a look if you want to know my qualifications.</p>
+
+        <h3>About</h3>
+        <p>This page is a long loosely structured auto-biography, where if you really want to, you can learn about me and my life. After the introduction, chunks are made to cover certain chapters in my life. As a personal reflection.</p>
+
+        <h3>Contact</h3>
+        <p>Are you interested in my skills? Perhaps you want to hire me? Or you're interested in collabarating/communicating. Feel free to contact me using the form there.</p>
+
+        <hr>
+        <h4>At the current moment, the site is still under construction, so not all links work properly. If you find some errors, typos, or perhaps some inefficient code, then please do contact me at iosef1004@hotmail.com.</h4>
     </div>
 
-    <!-- Skills block -->
-    <div class="light-block" id="skills">
-      <div class="block">
-        <div class="sub-title">
-          <h1>Skills</h1>
-          <hr>
-        </div>
-
-        <!-- All skills are represented percent wise -->
-        <h2>Technical Skills</h2>
-        <hr>
-        <div class="skill-block">
-          <div class="skill-list">
-            <li><h3>Python</h3><span class="bar"><span class="Python show-on-scroll"></span></span></li>
-
-            <li><h3>C</h3><span class="bar"><span class="C show-on-scroll"></span></span></li>
-
-            <li><h3>GLSL</h3><span class="bar"><span class="GLSL show-on-scroll"></span></span></li>
-
-            <li><h3>Java</h3><span class="bar"><span class="Java show-on-scroll"></span></span></li>
-          </div>
-
-          <div class="skill-list">
-            <li><h3>HTML</h3><span class="bar"><span class="HTML show-on-scroll"></span></span></li>
-
-            <li><h3>CSS</h3><span class="bar"><span class="CSS show-on-scroll"></span></span></li>
-
-            <li><h3>C++</h3><span class="bar"><span class="Cplus show-on-scroll"></span></span></li>
-
-            <li><h3>Javascript</h3><span class="bar"><span class="Javascript show-on-scroll"></span></span></li>
-          </div>
-        </div>
-        <hr>
-        <h2>Tools</h2>
-        <hr>
-        <div class="skill-block">
-          <div class="skill-list">
-            <li><h3>Linux: Ubuntu, Mint</h3><span class="bar"><span class="Linux show-on-scroll"></span></span></li>
-
-            <li><h3>Medibang Paint</h3><span class="bar"><span class="Medibang show-on-scroll"></span></span></li>
-
-            <li><h3>Pycharm</h3><span class="bar"><span class="Pycharm show-on-scroll"></span></span></li>
-
-            <li><h3>Sublime Text</h3><span class="bar"><span class="Sublime show-on-scroll"></span></span></li>
-
-            <li><h3>Git</h3><span class="bar"><span class="Git show-on-scroll"></span></span></li>
-
-            <li><h3>Atom</h3><span class="bar"><span class="Atom show-on-scroll"></span></span></li>
-
-            <li><h3>Eclipse</h3><span class="bar"><span class="Eclipse show-on-scroll"></span></span></li>
-          </div>
-          <div class="skill-list">
-            <li><h3>Windows: 7, 8, 10</h3><span class="bar"><span class="Windows show-on-scroll"></span></span></li>
-
-            <li><h3>FileZilla</h3><span class="bar"><span class="Zilla show-on-scroll"></span></span></li>
-
-            <li><h3>Android Studio</h3><span class="bar"><span class="Android show-on-scroll"></span></span></li>
-
-            <li><h3>Clip Studio Paint</h3><span class="bar"><span class="Clip show-on-scroll"></span></span></li>
-
-            <li><h3>Adobe Illustrator</h3><span class="bar"><span class="Illustrator show-on-scroll"></span></span></li>
-
-            <li><h3>Adobe Photoshop</h3><span class="bar"><span class="Photoshop show-on-scroll"></span></span></li>
-
-            <li><h3>Mac OS</h3><span class="bar"><span class="Mac show-on-scroll"></span></span></li>
-          </div>
-        </div>
-        <hr>
-        <h2>Languanges</h2>
-        <hr>
-        <div class="skill-block">
-          <div class="skill-list">
-            <li><h3>English</h3><span class="bar"><span class="English show-on-scroll"></span></span></li>
-
-            <li><h3>Spanish</h3><span class="bar"><span class="Spanish show-on-scroll"></span></span></li>
-          </div>
-          <div class="skill-list">
-            <li><h3>Japanese</h3><span class="bar"><span class="Japanese show-on-scroll"></span></span></li>
-            <li></li>
-          </div>
-        </div>
-        <hr>
-        <h2>Other Skills</h2>
-        <hr>
-        <div class="skill-block">
-          <div class="skill-list">
-            <li><h3>Teamwork</h3><span class="bar"><span class="Teamwork show-on-scroll"></span></span></li>
-
-            <li><h3>Writing</h3><span class="bar"><span class="Writing show-on-scroll"></span></span></li>
-          </div>
-
-          <div class="skill-list">
-            <li><h3>Public Speaking</h3><span class="bar"><span class="Public Speaking show-on-scroll"></span></span></li>
-
-            <li><h3>Halo Multiplayer (The best 100%)</h3><span class="bar"><span class="Halo show-on-scroll"></span></span></li>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Work/porfolio block -->
-    <div class="dark-block" id="work">
-      <div class="block">
-        <div class="sub-title">
-          <h1>Projects</h1>
-          <hr>
-        </div>
-        <div>
-          <ul class="work-list">
-
-            <!-- Personal Website/DALI submission listing -->
-            <li>
-              <div class="work-item">
-                <a href="https://github.com/leo1025/ioseflcasas.com">
-                  <div class="project-item">
-                    <img src="thumbnails/Website.png" class="work-thumbnail" width="400" height="400">
-                    <div class="overlay">
-                      <h4>github</h4>
-                    </div>
-                  </div>
-                </a>
-                <div class="description">
-                  <h3>ioseflcasas.com (DALI submission)</h3>
-                  <p>Made as a personal resume/portfolio site and for the DALI lab coding challenge. I have once tried to make a website using WordPress as a base, however, I found myself completely unfamiliar with HTML, CSS and PHP. Though I made something somewhat functional, I ended up far more frustrated with myself and web design as a field. This time I wanted to give it another try and after looking at 3 portfolio websites, I felt inspired. This site is a one pager, with the intention for my project links to connect to a blog post in the future and refine my style over time to create a unique and fun interactive resume. For now however, I will simply feature thumbnails, a short description and a link to either their repository or ShaderToy link.</p>
-                </div>
-              </div>
-            </li>
-
-            <!-- Ray-Tracing but in ShaderToy listing -->
-            <li>
-              <div class="work-item">
-                <div>
-                  <a href="https://www.shadertoy.com/view/Wd2cWh">
-                    <div class="project-item">
-                      <img src="thumbnails/raytracing.png" class="work-thumbnail" width="400" height="400">
-                      <div class="overlay">
-                        <h4>ShaderToy</h4>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="description">
-                  <h3>Ray Tracing but in ShaderToy</h3>
-                  <p>Following the books by Peter Shirley: Ray-Tracing in One Weekend and Ray-Tracing: The Next Week, I implemented a Ray-Tracer in ShaderToy. Also being a retry of the CS77 Assignment that was a real time ray-tracer that proved to be poor at rendering. The second book had me doing a lot of work arounds, abandoning my real-time ray-tracing attempt in favor of a static image render and constant resampling of the frames to create incredibly crisp images (Including the image that is featured on the top of this site). I ended up realizing that my code was poorly structured, and needed to fork a similar ray-tracer and reference it to rebuild my Ray-Tracer. Despite the spectular results, I learned that there is a lot for me to learn. I felt that this dive into Ray-Tracing was a stepping stone to go further into Computer Graphics.</p>
-                </div>
-              </div>
-            </li>
-
-            <!-- CS77 Solar System Listing -->
-            <li>
-              <div class="work-item">
-                <div>
-                  <a href="https://www.shadertoy.com/view/wtKXWW">
-                    <div class="project-item">
-                      <img src="thumbnails/SOLAR.png" class="work-thumbnail" width="400" height="400">
-                      <div class="overlay">
-                        <h4>ShaderToy</h4>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="description">
-                  <h3>CS77 Solar System Simulation</h3>
-                  <p>Final Project for CS77 Winter 2020. This project was big for me in many ways. For one, it was the most successful group project I've ever had. Before I struggled in team projects, but after taking everything that I learned from those times, I worked together with my partner and friend, Jiro Mizuno, to create an impressive Solar System Simulation using ShaderToy. I was tasked with figuring out the process of using ShaderToy's limited work environment to simulate Kepler Orbital Mechanics and move objects. As well as book keeping, making sure that Jiro's work, being procedural texture generation, wouldn't interfere with my work. The final product speaks for itself, bugs and all. Even on our heavy time crunch then, we prevailed with an incredible simulation.</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact info block -->
-    <div class="light-block" id="contact">
-      <div class="block">
-        <div class="sub-title">
-          <h1>Contact</h1>
-          <hr>
-        </div>
-        <div class="contacts">
-          <div class="contact-text">
-            <h1>Feel free to contact me!</h1>
-          </div>
-
-          <!-- Kind of wish I had more of an online presence :/-->
-          <div class="contact-icon">
-            <div class="icon">
-              <a href="mailto:iosef.l.casas.21@dartmouth.edu"><i class="far fa-envelope" aria-hidden="true"></i></a>
-            </div>
-            <div class="icon">
-              <a href="https://www.linkedin.com/in/iosef-casas-71378a15a/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        <div>
-      </div>
-    </div>
-    <script src="javascripts/show-on-scroll.js"></script>
+    <script src="javascripts/responsive-navbar.js"></script>
   </body>
 </html>
