@@ -1,0 +1,582 @@
+/*
+*     Top navigation bar styling.
+*     Has hover animation feature.
+*     Keeps header navigation menu fixed.
+*/
+
+header {
+  background: #6ac468;
+  position: fixed;
+  width: 100%;
+  z-index:1000;
+  /* Sets header as the top overlay*/
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 1%;
+  position: relative;
+  width: 10%;
+}
+
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  transition: font-size 0.1s ease-out;
+}
+
+.navbar a:hover {
+  color: #000;
+  font-size: 18px;
+}
+
+/*
+*     Body elements styling
+*/
+
+body {
+  margin: 0;
+  background: #222;
+  color: #ffffff;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-size: 1.0vw;
+}
+
+p {
+  line-height: 2.0;
+}
+
+.full-title-splash {
+  padding-top: 35px;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+  text-shadow: 2px 2px 10px #6ac468;
+  opacity: 0;
+  transition: opacity 2s 1s ease-out;
+}
+
+.title.is-visible {
+  opacity: 1;
+}
+
+.splash {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  font-size: 60px;
+  font-size: 3.0vw;
+  font-weight: bold;
+}
+
+.sub-title {
+  text-align: center;
+}
+
+.col {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 50% 50%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.about-block {
+  vertical-align: top;
+}
+
+.description-block {
+  vertical-align: top;
+  margin: 0 10%;
+}
+
+.text {
+  word-break: normal;
+  padding: 10px;
+}
+
+.spacer {
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.avatar {
+  border-radius: 50%;
+  max-width:100%;
+  max-height:100%;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #DDD;
+  border: 7px solid #6ac468;
+}
+
+.block {
+   max-width: 100%;
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.dark-block {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.light-block {
+  background: #555;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*
+*     Projects listing styling
+*/
+.project-item {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 40px;
+  margin-top: 5%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: inherit;
+  max-height: 97.5%;
+  border-radius: 5%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fff;
+}
+
+.overlay h4 {
+  color: #000;
+  font-size: 30px;
+  font-size: 2.0vw;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -20%);
+  text-align: center;
+}
+
+.project-item:hover .overlay {
+  opacity: 0.6;
+}
+
+.work-thumbnail {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.work-list {
+  list-style: none;
+}
+
+.work-item {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  vertical-align: top;
+}
+
+.description {
+  word-break: normal;
+}
+
+.work-list li {
+  text-decoration: none;
+  padding: 25px;
+}
+
+/*
+*     Skill listing styling
+*/
+
+.skill-block {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.skill-list{
+  margin-left: 5%;
+  margin-right: 5%;
+  list-style: none;
+}
+
+.bar {
+  background: #111111;
+  display: block;
+  height: 4px;
+  border: 1px solid #000000;
+  overflow: hidden;
+  box-shadow: 0 0 5px #6ac468;
+}
+
+.bar span {
+  height: 4px;
+  float: left;
+  background: #6ac468;
+}
+
+/*
+*     Contact listing. Needs more twitter.
+*/
+
+.contacts {
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 25px;
+  padding: 250px;
+}
+
+.contact-icon {
+  text-align: center;
+  background: #444;
+  padding: 25px;
+}
+
+/* icon class scales thumbnails to screen size */
+.icon {
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.icon a {
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 20%;
+  box-shadow: 0 5px 15px -5px #6ac468;
+  color: #6ac468;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.icon a i {
+    line-height: 75px;
+    font-size: 30px;
+    transition: 0.2s linear;
+}
+
+.icon a:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+/* TODO: This entire section needs to be changed. */
+
+.Python {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Python.is-visible {
+  width: 90%;
+}
+
+.C {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.C.is-visible {
+  width: 90%;
+}
+
+.Cplus {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Cplus.is-visible {
+  width: 50%;
+}
+
+.GLSL {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.GLSL.is-visible {
+  width: 80%;
+}
+
+.Java {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Java.is-visible {
+  width: 70%;
+}
+
+.HTML {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.HTML.is-visible {
+  width: 70%;
+}
+
+.CSS {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.CSS.is-visible {
+  width: 50%;
+}
+
+.Javascript {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Javascript.is-visible {
+  width: 30%;
+}
+
+.Git {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Git.is-visible {
+  width: 80%;
+}
+
+.Atom {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Atom.is-visible {
+  width: 80%;
+}
+
+.Sublime {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Sublime.is-visible {
+  width: 90%;
+}
+
+.Zilla {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Zilla.is-visible {
+  width: 70%;
+}
+
+.Illustrator {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Illustrator.is-visible {
+  width: 30%;
+}
+
+.Photoshop {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Photoshop.is-visible {
+  width: 30%;
+}
+
+.Clip {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Clip.is-visible {
+  width: 60%;
+}
+
+.Medibang {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Medibang.is-visible {
+  width: 90%;
+}
+
+.Linux {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Linux.is-visible {
+  width: 100%;
+}
+
+.Windows {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Windows.is-visible {
+  width: 90%;
+}
+
+.Mac {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Mac.is-visible {
+  width: 20%;
+}
+
+.Android {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Android.is-visible {
+  width: 60%;
+}
+
+.Pycharm {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Pycharm.is-visible {
+  width: 90%;
+}
+
+.Eclipse {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Eclipse.is-visible {
+  width: 80%;
+}
+
+.English {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.English.is-visible {
+  width: 100%;
+}
+
+.Spanish {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Spanish.is-visible {
+  width: 100%;
+}
+
+.Japanese {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Japanese.is-visible {
+  width: 20%;
+}
+
+.Teamwork {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Teamwork.is-visible {
+  width: 80%;
+}
+
+.Speaking {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Speaking.is-visible {
+  width: 60%;
+}
+
+.Writing {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Writing.is-visible {
+  width: 80%;
+}
+
+.Halo {
+  width: 0%;
+  transition: width 2s 0.5s ease-out;
+}
+
+.Halo.is-visible {
+  width: 100%;
+}

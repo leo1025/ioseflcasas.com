@@ -1,0 +1,15 @@
+.main {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding-bottom: 50px;
+  background: #222;
+  color: #fff;
+}
+
+.contents {
+  display: grid;
+}
+
+.light-block {
+  background-color: #444;
+}
