@@ -1,15 +1,38 @@
+/*
+  Sets up base colors and fonts
+*/
 .main {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   padding-bottom: 50px;
   background: #222;
-  color: #fff;
+    color: #ffffff;
 }
 
-.contents {
+.grid-22 {
+  padding: 60px;
   display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 50% 50%;
+  max-width: 900px;
+  margin: 0 auto !important; 
+  text-align: center;
 }
 
-.light-block {
-  background-color: #444;
+.grid-22-span {
+  grid-column: 1 / span 2;
+}
+
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+  max-width: 350px;
+  max-height: 350px;
+  box-sizing: border-box;
+  border: 7px solid #6ac468;
+}
+
+.introduction {
+  font-size: 24px;
+  line-height: 175%;
 }

@@ -20,16 +20,6 @@ The profile picture should have an easy to see outline, and scalable to the scre
 
 The text should also be scalable to screensize.
 
-### Skills
-
-The skills section should be a linear easy to read long list. Equally sized to the rest of the site. The text should not scale, but should be made less bold and popping. 
-
-The skills should be marked by blocks, that are sectioned off and give easy to understand skill proficiency.
-
-They should animate, where upon being visible, should fill up to their appropriate widths.
-
-All skills should be doubled checked and listed, as all possible skills will be important. 
-
 ### Work
 
 This section will have only two items within it, that will need to be changed continuously. 
