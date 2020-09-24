@@ -3,70 +3,116 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- reference google font and stylesheet -->
+    <meta charset="utf-8"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/navigation.css" rel="stylesheet" type="text/css">
-    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/resume.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Home</title>
   </head>
 
   <body class="main">
-    <!-- Top Navigation Bar -->
+    <!-- Navigation Top Bar -->
     <header>
       <div class="navigation" id="top-nav">
         <a href="javascript:void(0);" class="icon" onclick="collapse()">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="pages/construction.html">Articles</a>
-        <a href="pages/construction.html">Projects</a>
-        <a href="pages/resume.html">Profile</a>
-        <a href="pages/construction.html">About</a>
-        <a href="pages/construction.html">Contact</a>
+        <a href="">About</a>
+        <a href="">Projects</a>
+        <a href="">Contact</a>
+        <a href="">Resume</a>
       </div>
     </header>
 
-    <!-- Welcome Splash -->
-    <div class="box">
-      <img class="back-img" src="assets/fractal.png">
-      <div class="title show-on-scroll">
-        <h1>Iosef Leonardo Casas Gutierrez</h1>
-        <h3>Computer Science</h3>
-        <h3>Digital Art</h3>
+    <!-- Splash Page -->
+    <div class="grid-22">
+      <div>
+        <h4>Hi, my name is...</h4>
+        <h1>Iosef Casas</h1>
+        <h5>Computer Science</h5>
+        <h5>Software Engineering</h5>
+        <h5>Digital Art</h5>
       </div>
-      <a href="https://www.shadertoy.com/view/WtBBWW">
-        <div class="text-block">
-          <h4>Fractal Landscape 1</h4>
-        </div>
-      </a>
+      <div>
+        <a href="">Github</a>
+        <a href="">LinkedIn</a>
+        <a href="">Email</a>
+      </div>
     </div>
 
-    <div class="info-bottom">
-        <h2>Welcome to my website!</h2>
+    <!-- Profile block -->
+    <div class="grid-22" id="about">
+      <div class="grid-22-span">
+        <h1>About Me</h1>
+      </div>
+
+      <div class="grid-22-item">
+        <img class="avatar" alt="Iosef-Casas" src="../assets/self-big.png">
+      </div>
+
+      <!-- Basic information -->
+      <div class="grid-22-item">
+        <p>Iosef Leonardo Casas Gutierrez</p>
+        <p>April 10th, 1999</p>
         <hr>
-        <p>I created this website initally as a one-pager resume site. But after exploring other wonderful websites and constantly looking at my website made of spaghetti code and poorly scalable content with scorn; I decided to reconstruct it into a large warehouse site of sorts where I can catalog my projects, writings, jobs and connections as I grow and develop personally and professionally. I'll briefly explain what each of the links on the bar represent.</p>
-
-        <h3>Articles</h3>
-        <p> This will be a link to a future YouTube channel and written article catalog, LeoDV. I plan to create video essays and written articles on topics that interest me and that I apply to my daily life. It will be a large library of my videos and their accompanying articles or blog posts.</p>
-
-        <h3>Projects</h3>
-        <p>This link will take you to a large clickable library that catalogs all of my projects. The image links will send you to individualized pages that briefly cover the project, design, implementation, results and conclusions. You may also find links there to direct demos, downloads or github repositories.</p>
-
-        <h3>Resume</h3>
-        <p>This link will take you to my resume site, which is a (soon to be) remake of my one-pager website. It's very simple and plain, but it acts as a reliable resume that I can connect any possible employer or peer to. Take a look if you want to know my qualifications.</p>
-
-        <h3>About</h3>
-        <p>This page is a long loosely structured auto-biography, where if you really want to, you can learn about me and my life. After the introduction, chunks are made to cover certain chapters in my life. As a personal reflection.</p>
-
-        <h3>Contact</h3>
-        <p>Are you interested in my skills? Perhaps you want to hire me? Or you're interested in collabarating/communicating. Feel free to contact me using the form there.</p>
-
+        <p>Software Engineer</p>
+        <p>Digital Artist</p>
         <hr>
-        <h4>At the current moment, the site is still under construction, so not all links work properly.</h4>
+        <p>B.A. Computer Science mod. Digital Arts</p>
+        <p>Dartmouth College 2022</p>
+      </div>
+
+      <div class="grid-22-span">
+        <p class="introduction">Diligent and relentless worker. Very fast learner. I can make massive leaps in progress in a short amount of time while being flexible to other priorities and tasks.</p>
+      </div>
+    </div>
+
+
+
+    <!-- Work/porfolio block -->
+    <div class="grid-22">
+      <div class="grid-22-span">
+        <h1>Projects</h1>
+      </div>
+      <div>
+        <img src="thumbnails/Website.png" atl="" class="work-thumbnail" width="400" height="400">
+        <a href="https://github.com/leo1025/ioseflcasas.com">Github</a>
+        <a href="https://ioseflcasas.com">Demo</a>
+      </div>
+
+      <div class="project-entries">
+        <h3>Personal Website</h3>
+        <p></p>
+      </div>
+
+
+      <div>
+        <img src="thumbnails/raytracing.png" alt="" class="work-thumbnail" width="400" height="400">
+        <a href="https://github.com/leo1025/Fractal-Landscape-1">Github</a>
+        <a href="https://www.shadertoy.com/view/Wd2cWh">Demo</a>
+      </div>
+
+      <div class="project-entries">
+        <h3>Fractal Landscape</h3>
+        <p></p>
+      </div>
+    </div>
+
+    <!-- Contact info block -->
+    <div class="grid-22" id="contact">
+      <div class="grid-22-span"> 
+        <h1>Contact</h1>
+      </div>
+
+      <div>
+        <a href="mailto:iosef.l.casas.21@dartmouth.edu"><i class="far fa-envelope" aria-hidden="true"></i></a>
+
+        <a href="https://www.linkedin.com/in/iosef-casas-71378a15a/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      </div>
     </div>
 
     <script src="javascripts/responsive-navbar.js"></script>
-    <script src="javascripts/show-on-scroll.js"></script>
   </body>
 </html>
