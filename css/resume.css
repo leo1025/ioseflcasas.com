@@ -2,25 +2,32 @@
   Sets up base colors and fonts
 */
 .main {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.05vw;
+  font-size: 20px;
   padding-bottom: 50px;
   background: #222;
   color: #ffffff;
 }
 
-.grid-22 {
-  padding: 60px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 50% 50%;
-  max-width: 50vw;
-  text-align: center;
-  margin: 0 auto !important;
+.nav-theme {
+  background-color: #222 !important;
 }
 
-.grid-22-span {
-  grid-column: 1 / span 2;
+.text-theme {
+  float: right;
+  text-align: center;
+}
+
+.text-theme li {
+  width: 150px;
+}
+
+.text-theme li a{
+  color: #ddd !important;
+  transition: color 0.2s 0.1s ease-out;
+}
+
+.text-theme li a:hover {
+  color: #6ac468 !important;
 }
 
 .avatar {
@@ -31,59 +38,3 @@
   box-sizing: border-box;
   border: 7px solid #6ac468;
 }
-
-.introduction {
-  font-size: 1.25vw;
-  line-height: 175%;
-}
-
-/* Navigation top bar, will collapse onto smaller drop down menu on screen sizes less than 600px */
-.navigation {
-  color: #dddddd;
-  font-weight: bold;
-  background: #333;
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    z-index:100;
-    text-align: right;
-}
-
-.navigation a {
-  color: #ddd;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  padding: 15px 60px;
-  transition: color 0.2s ease-out;
-}
-
-.navigation a:hover {
-  color: #6ac468;
-}
-
-.navigation .icon {
-  width: 20px;
-    display: none;
-}
-
-/* Media dedection for checking screen size */
-@media screen and (max-width: 640) {
-  .navigation a:not(:first-child) {display: none;}
-  .navigation a.icon {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .navigation.responsive {position: fixed;}
-  .navigation.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navigation.responsive a {
-    float: none;
-    display: block;
-  }
-} 

@@ -4,30 +4,46 @@
   <head>
     <!-- reference google font and stylesheet -->
     <meta charset="utf-8"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/resume.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/resume.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Home</title>
   </head>
 
   <body class="main">
     <!-- Navigation Top Bar -->
     <header>
-      <div class="navigation" id="top-nav">
-        <a href="javascript:void(0);" class="icon" onclick="collapse()">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
-        <a href="">Resume</a>
-      </div>
+      <nav class="navbar navbar-expand-md nav-theme navbar-dark fixed-top">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto text-theme">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resume</a>
+            </li>     
+          </ul>
+        </div>  
+      </nav>
     </header>
 
     <!-- Splash Page -->
-    <div class="grid-22">
+    <div class="">
       <div>
         <h4>Hi, my name is...</h4>
         <h1>Iosef Casas</h1>
@@ -43,17 +59,17 @@
     </div>
 
     <!-- Profile block -->
-    <div class="grid-22" id="about">
-      <div class="grid-22-span">
+    <div class="" id="about">
+      <div class="">
         <h1>About Me</h1>
       </div>
 
-      <div class="grid-22-item">
+      <div class="">
         <img class="avatar" alt="Iosef-Casas" src="../assets/self-big.png">
       </div>
 
       <!-- Basic information -->
-      <div class="grid-22-item">
+      <div class="">
         <p>Iosef Leonardo Casas Gutierrez</p>
         <p>April 10th, 1999</p>
         <hr>
@@ -64,7 +80,7 @@
         <p>Dartmouth College 2022</p>
       </div>
 
-      <div class="grid-22-span">
+      <div class="">
         <p class="introduction">Diligent and relentless worker. Very fast learner. I can make massive leaps in progress in a short amount of time while being flexible to other priorities and tasks.</p>
       </div>
     </div>
@@ -72,8 +88,8 @@
 
 
     <!-- Work/porfolio block -->
-    <div class="grid-22">
-      <div class="grid-22-span">
+    <div class="">
+      <div class="">
         <h1>Projects</h1>
       </div>
       <div>
@@ -82,7 +98,7 @@
         <a href="https://ioseflcasas.com">Demo</a>
       </div>
 
-      <div class="project-entries">
+      <div class="">
         <h3>Personal Website</h3>
         <p></p>
       </div>
@@ -94,21 +110,20 @@
         <a href="https://www.shadertoy.com/view/Wd2cWh">Demo</a>
       </div>
 
-      <div class="project-entries">
+      <div class="">
         <h3>Fractal Landscape</h3>
         <p></p>
       </div>
     </div>
 
     <!-- Contact info block -->
-    <div class="grid-22" id="contact">
-      <div class="grid-22-span"> 
+    <div class="" id="contact">
+      <div class=""> 
         <h1>Contact</h1>
       </div>
 
       <div>
         <a href="mailto:iosef.l.casas.21@dartmouth.edu"><i class="far fa-envelope" aria-hidden="true"></i></a>
-
         <a href="https://www.linkedin.com/in/iosef-casas-71378a15a/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
       </div>
     </div>
