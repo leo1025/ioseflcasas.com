@@ -14,11 +14,7 @@
 
 .text-theme {
   float: right;
-  text-align: center;
-}
-
-.text-theme li {
-  width: 150px;
+  text-align: right;
 }
 
 .text-theme li a{
