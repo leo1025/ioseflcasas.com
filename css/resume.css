@@ -3,34 +3,56 @@
 */
 .main {
   font-size: 20px;
-  padding-bottom: 50px;
-  background: #222;
+  padding: 25px;
+  background: #333;
   color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/*
+  CSS regarding navigation top-bar
+*/
 .nav-theme {
   background-color: #222 !important;
+  height: 50px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .text-theme {
   float: right;
   text-align: right;
+  background-color: #222;
+  padding-right: 1.5vw;
 }
 
-.text-theme li a{
+.text-theme li {
+  padding-left: 25px;
+  padding-right: 15px;
+}
+
+.text-theme li a {
   color: #ddd !important;
-  transition: color 0.2s 0.1s ease-out;
+  transition: color 0.2s 0.05s ease-out;
 }
 
 .text-theme li a:hover {
   color: #6ac468 !important;
 }
 
+/*
+  Regarding the opening splash screen
+*/
+
+.splash {
+  height: 100vh;
+}
+
 .avatar {
   vertical-align: middle;
   border-radius: 50%;
-  max-width: 350px;
-  max-height: 350px;
+  width: 15vw;
+  height: 15vw;
   box-sizing: border-box;
   border: 7px solid #6ac468;
 }
