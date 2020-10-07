@@ -6,7 +6,7 @@
   padding: 25px;
   background: #333;
   color: #ffffff;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .nav-list {
-  margin-right: 7vw;
+  margin-right: 3vw;
   text-align: right;
 }
 
@@ -29,13 +29,12 @@
 }
 
 .text-theme li {
-  margin: 0 30px;
+  margin: 0 15px;
 }
 
 .text-theme li a {
   color: #ddd !important;
   transition: color 0.2s 0.05s ease-out;
-  margin: 5px;
 }
 
 .text-theme li a:hover {
@@ -48,17 +47,46 @@
 
 .splash {
   height: 100vh;
-  position: relative;
 }
 
 .splash-set {
-  position: absolute;
-  width: 100%;
-  top: 25%;
+  margin: 20vh 0;
 }
 
-.quick-links {
-  list-style: none;
+.main-title {
+  font-weight: bolder;
+}
+
+.main-title h1 {
+  font-size: clamp(50px, 8vw, 90px);
+  font-weight: 800;
+  color: #6ac468;
+}
+
+.main-title h2 {
+  font-size: clamp(30px, 8vw, 50px);
+  font-weight: 600;
+  color: #888;
+}
+
+.main-title h5 {
+  font-size: clamp(14px, 8vw, 20px);
+  font-weight: 200;
+  color: #ccc;
+}
+
+.main-title button {
+  margin: 3% 0;
+}
+
+.custom-btn {
+  color: #6ac468;
+  border-color: #6ac468;
+}
+
+.custom-btn:hover {
+  color: #fff;
+  background-color: #6ac468;
 }
 
 /*
