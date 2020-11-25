@@ -1,3 +1,4 @@
+/* Base CSS, site wide */
 body {
     background-color: #333;
     color: #eee;
@@ -5,7 +6,59 @@ body {
     font-size: 20px;   
 }
 
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 h1 h2 h3 h4 h5 {
     font-family: 'Rubik', sans-serif;
     font-size: 50px;  
 }
+
+/* Navigation Bar CSS */
+.mynav {
+    background-color: #333;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.mynav nav {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.mynav a {
+    color: #eee;
+    transition: color .25s;
+}
+
+.mynav a:hover {
+    color: #44cf49;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.nav-item {
+    padding-left: 70px;
+}
+
+@media only screen and (min-width: 800px) {
+    .side-icon{display: none;}
+}
+
+.sidenav {
+    background-color: #54494b;
+    position: fixed;
+    z-index: 2000;
+}
+
+@media only screen and (min-width: 800px) {
+    .sidenav{display: none;}
+}
+

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iosef Casas</title>
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Heading Font -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
   <!-- Body Font -->
@@ -12,28 +13,49 @@
   <!-- CSS link -->
   <link rel="stylesheet" href="./css/styles.css">
 
+  <script src="https://kit.fontawesome.com/f0cbc27cb3.js" crossorigin="anonymous"></script>
+
 </head>
   <body>
-    <div class="main">
-      <!-- Loading Screen -->
-      <div>
+    <!-- Loading Screen -->
+    <div>
 
-      </div>
+    </div>
 
-      <!-- Navigation Bar -->
-      <div>
-        <nav>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Resume</a></li>
-          </ul>
+    <!-- Navigation Bar -->
+    <header>
+      <!-- Top navigation -->
+      <div class="mynav">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">ILC</a>
+          <a class="side-icon"><i class="fas fa-bars fa-lg"></i></a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Resume</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
 
+      <!-- Side navigation -->
+      <div class="sidenav">
+        <aside>
+          <ul class="">
+            <li class=""><a class="" href="">About</a></li>
+            <li class=""><a class="" href="">Projects</a></li>
+            <li class=""><a class="" href="">Contact</a></li>
+            <li class=""><a class="" href="">Resume</a></li>
+          </ul>
+        </aside>
+      </div>
+    </header>
+
+    <div class="main">
       <!-- Welcome Section -->
-      <div>
+      <div id="Welcome">
         <h1>Iosef Leonardo Casas</h1>
         <h3>Combining Scientific rigor with Artistic Vision</h3>
         <p>Software Engineer based in Louisville, KY. Specializing in Full-Stack Web Development, Digital Arts and Computer Graphics. Creating aesthetic and functional websites and applications.</p>
@@ -41,7 +63,7 @@
       </div>
 
       <!-- About Section -->
-      <div>
+      <div id="About">
         <h3>About</h3>
         <div>
           <img src="" alt="[Self-Image]" />  
@@ -52,7 +74,7 @@
       </div>
 
       <!-- Featured Projects Section -->
-      <div>
+      <div id="Projects">
         <!-- Temp: Will be filled in with my React Github Library App -->
         <div>
           <h3>Featured Projects</h3>
@@ -82,6 +104,7 @@
             <footer>
               <ul>
                 <li>GLSL</li>
+                <li>ShaderToy</li>
               </ul>
             </footer>
           </div>
@@ -89,7 +112,7 @@
       </div>
 
       <!-- Contact Section -->
-      <div>
+      <div id="Contact">
         <div>
           <h3>Contact</h3>
           <p>Feel free to contact me. Whether you need a website designed, an app created or you just want to chat. My inbox is open.</p>
@@ -97,5 +120,9 @@
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
